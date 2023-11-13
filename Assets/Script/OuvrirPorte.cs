@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -24,4 +25,10 @@ public class OuvrirPorte : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+            if(other.tag =="Player"){
+        PorteDroite.GetComponent<Animator>().SetBool("Ouvre",false);
+    }
+    }
 }
