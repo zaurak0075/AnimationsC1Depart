@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class OuvrirPorte : MonoBehaviour
 {
+
+    [SerializeField] GameObject porteDroite;
+     [SerializeField] GameObject PorteGauche;
+     [SerializeField] GameObject Joeur
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("C'est beau, ça marche! Zbzb");
+        Debug.Log(porteDroite);
+        Debug.Log(PorteGauche);
     }
 
-    // Update is called once per frame
-    void Update()
+     void OnTriggerEnter(Collider other)
     {
         
     }
+
 }
