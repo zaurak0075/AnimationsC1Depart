@@ -4,5 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CommencerLeJeu : MonoBehaviour
 {
-public void CommencerLeJeu(){};
+public void CommencerLaPartie(){
+ SceneManager.LoadScene("SceneJeuDepart");
+}
+
 }
