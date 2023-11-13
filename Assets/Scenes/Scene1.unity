@@ -8629,6 +8629,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 210442451396089719, guid: 1696222c72e89ab4f9026119ef17826b, type: 3}
   m_PrefabInstance: {fileID: 926595462}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &926729520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8358542452837294435, guid: 9dd8a3227dc0aa84099496d08718ad7b, type: 3}
+  m_PrefabInstance: {fileID: 1260578414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &928500475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10543,8 +10548,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3487b2b3e0cd742af48179f29f14d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  porteDroite: {fileID: 2063469345}
+  PorteDroite: {fileID: 2063469345}
   PorteGauche: {fileID: 862203656}
+  Joeur: {fileID: 926729520}
 --- !u!65 &1138790330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10560,7 +10566,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10573,7 +10579,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138790327}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10624,8 +10630,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138790327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.25, y: 0.5, z: -15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 32.125, y: 0.5, z: -13.999999}
+  m_LocalScale: {x: 2.75, y: 1, z: 7.719584}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -11605,6 +11611,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8358542452837294435, guid: 9dd8a3227dc0aa84099496d08718ad7b, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358542452837294435, guid: 9dd8a3227dc0aa84099496d08718ad7b, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8358542452837294461, guid: 9dd8a3227dc0aa84099496d08718ad7b, type: 3}
