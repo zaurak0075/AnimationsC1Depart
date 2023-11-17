@@ -10,7 +10,7 @@ public class OuvrirPorte : MonoBehaviour
     [SerializeField] GameObject PorteDroite;
      [SerializeField] GameObject PorteGauche;
      [SerializeField] GameObject Joeur;
-    // Start is called before the first frame update
+  
     void Start()
     {
         Debug.Log(PorteDroite);
@@ -22,6 +22,10 @@ public class OuvrirPorte : MonoBehaviour
         if(other.tag =="Player"){
         PorteDroite.GetComponent<Animator>().SetBool("Ouvre",true);
 
+        if(other.tag =="Player"){
+        PorteGauche.GetComponent<Animator>().SetBool("Ouvre",true);
+
+        }
         }
     }
 
@@ -29,6 +33,8 @@ public class OuvrirPorte : MonoBehaviour
     {
             if(other.tag =="Player"){
         PorteDroite.GetComponent<Animator>().SetBool("Ouvre",false);
+    } if(other.tag =="Player"){
+        PorteDroite.GetComponent<Animator>().SetBool("Ouvre",false);
     }
-    }
+}
 }
